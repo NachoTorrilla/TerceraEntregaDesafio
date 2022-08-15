@@ -1,0 +1,59 @@
+@import "variables";
+@import "inicio";
+@import "bodas";
+@import "productos";
+@import "campanas";
+@import "marcas";
+
+/*IMAGENES*/
+.imagen {
+    width: 100%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: $bordes-radio;
+    box-shadow: $box-shadow;
+}
+
+/*MEDIAS @ */
+@media (max-width:768px) {
+    h1 {
+        font-size: 25px;
+    }
+    .bodas {
+        font-size: 30px;
+        letter-spacing: 20px;
+        font-weight: bold;
+    }
+    .productos {
+        font-size: 20px;
+        letter-spacing: 20px;
+        font-weight: bold;
+    }
+    .campanas {
+        font-size: 20px;
+        letter-spacing: 20px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .parrafo-cuatro {
+        font-size: 20px;
+    }
+    .bodas-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .seccion-productos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .campana-dos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+}

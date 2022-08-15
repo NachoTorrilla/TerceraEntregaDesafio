@@ -1,0 +1,33 @@
+/*CAMPAÑAS*/
+.campana-container {
+    border-top: rgb(31, 27, 27) solid 1px;
+        p {
+            font-size: 40px;
+            padding-left: 40px;
+            letter-spacing: 40px;
+            padding-bottom: 20px;
+            padding-top: 60px;
+            border-top: rgb(31, 27, 27) solid 3px;
+    }
+    
+}
+.campana-uno {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(300px, auto);
+    gap: 20px;
+    padding: 20px;
+}
+.campana-dos {
+    width: 100%;
+    margin: auto;
+    @include grid-template-columns;
+    gap: 20px;
+    padding: 20px;
+}
+.camapana-imagen:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}

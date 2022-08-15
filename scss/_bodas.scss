@@ -1,0 +1,30 @@
+/*BODAS*/
+.bodas {
+    font-size: 40px;
+    padding-left: 40px;
+    letter-spacing: 40px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    border-top: rgb(31, 27, 27) solid 3px;
+}
+.bodas-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 20px;
+    padding: 20px;
+    .boda-imagen img {
+        width: 100%;
+        height: 100%;
+    }
+        .imagen .boda-imagen {
+            width: 100%;
+            height: 100%;
+        } 
+}
+.boda-imagen:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
