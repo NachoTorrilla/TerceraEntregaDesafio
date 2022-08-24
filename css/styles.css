@@ -4,7 +4,7 @@
   font-size: 15px;
   font-family: "Brawler", serif;
   letter-spacing: 5px;
-  margin-top: 3em;
+  margin-top: 9em;
   margin-bottom: 3em;
 }
 
@@ -14,7 +14,7 @@
   padding-left: 40px;
   letter-spacing: 40px;
   padding-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 100px;
   border-top: rgb(31, 27, 27) solid 3px;
 }
 
@@ -48,7 +48,7 @@
   padding-left: 40px;
   letter-spacing: 40px;
   padding-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 100px;
   border-top: rgb(31, 27, 27) solid 3px;
 }
 
@@ -82,7 +82,7 @@
   padding-left: 40px;
   letter-spacing: 40px;
   padding-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 100px;
   border-top: rgb(31, 27, 27) solid 3px;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .marcas-logos {
-  width: 99%;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -166,28 +166,87 @@ footer p {
   box-shadow: 5px 8px 12px rgb(31, 27, 27);
 }
 
+/* MENU NAVEGADOR*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 5px 10px rga(0, 0, 0, 0.1);
+  padding: 0 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background-color: #F2F2F2;
+  /*  .nav-bar ul li ul {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        display: none;
+    }
+    .nav-bar ul li ul li {
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    .nav-bar ul li ul li ul {
+        left: 200px;
+        top: 0;
+    }
+        .nav-bar ul li:hover > ul {
+            display: initial;
+        } */
+}
+header .logo img {
+  width: 250px;
+}
+header .nav-bar ul {
+  list-style: none;
+}
+header .nav-bar ul li {
+  position: relative;
+  float: left;
+}
+header .nav-bar ul li a {
+  font-size: 25px;
+  padding: 20px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .nav-bar ul li a:hover {
+  background: #333;
+  color: #F2F2F2;
+  transition: all 0.5s;
+}
+header #menu-bar {
+  display: none;
+}
+header label {
+  font-size: 35px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
 /*MEDIAS @ */
 @media (max-width: 768px) {
   h1 {
     font-size: 25px;
   }
   .bodas {
-    font-size: 30px;
-    letter-spacing: 20px;
-    font-weight: bold;
+    display: none;
   }
   .productos {
-    font-size: 20px;
-    letter-spacing: 20px;
-    font-weight: bold;
+    display: none;
   }
   .campanas {
-    font-size: 20px;
-    letter-spacing: 20px;
-    font-weight: bold;
+    display: none;
   }
   h2 {
     font-size: 20px;
+    padding-top: 140px;
   }
   .parrafo-cuatro {
     font-size: 20px;
@@ -195,14 +254,54 @@ footer p {
   .bodas-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 140px;
   }
   .seccion-productos {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-top: 140px;
+  }
+  .campana-uno {
+    display: grid;
+    padding-top: 140px;
   }
   .campana-dos {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .nav-bar ul li {
+    width: 100%;
+  }
+  header .nav-bar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .nav-bar ul li ul li {
+    background: #fff;
+  }
+  header .nav-bar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+  #menu-bar:checked ~ .nav-bar {
+    display: initial;
   }
 }
 

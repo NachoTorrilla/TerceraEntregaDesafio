@@ -14,25 +14,32 @@
     <title>CAMPAÑAS | MAURO PAWLUN</title>
 </head>
 <body>
+    <!--MENU DE NAVEGACION-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2" id="menu">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"> <img src="../imagenes/Logo.png" alt="LOGO"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse .d-lg-flex flex-row-reverse bd-highlight" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link fs-3 text-dark" href="../index.html">Inicio</a>
-                    <a class="nav-link fs-3 text-dark" href="../pages/bodas.html">Bodas</a>
-                    <a class="nav-link fs-3 text-dark" href="../pages/productos.html">Productos</a>
-                    <a class="nav-link fs-3 text-dark" href="../pages/campañas.html">Campañas</a>
-                    <a class="nav-link fs-3 text-dark" href="../pages/marcas.html">Marcas</a>
-                    <a class="nav-link fs-3 text-dark" href="#contacto">Contacto</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+        <a href="../index.html" class="logo"><img src="../imagenes/Logo.png" alt="LOGO"></a>
+  
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../pages/bodas.html">Bodas</a>
+                 <!--   <ul>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Campañas</a></li>
+                        <li><a href="#">Bodas</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="../pages/productos.html">Productos</a>
+                 <!--   <ul>
+                         <li><a href="#">Productos</a></li>
+                        <li><a href="#">Spots</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="../pages/campañas.html">Campañas</a></li>
+                <li><a href="../pages/marcas.html">Marcas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
         <!--CAMPAÑAS-->
         <section>
@@ -70,5 +77,6 @@
 
     <!--JS BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7765af5446.js" crossorigin="anonymous"></script>
 </body>
 </html>

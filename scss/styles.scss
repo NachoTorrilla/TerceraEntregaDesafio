@@ -17,28 +17,86 @@
     box-shadow: $box-shadow;
 }
 
+/* MENU NAVEGADOR*/
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0 5px 10px rga(0,0,0,.1);
+    padding: 0 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: $bk-color-menu;
+        .logo img {
+            width: 250px;
+        }
+        .nav-bar ul {
+            list-style: none;           
+        }
+            .nav-bar ul li {
+                position: relative;
+                float: left;
+            }
+                .nav-bar ul li a {
+                    font-size: 25px;
+                    padding: 20px;
+                    display: block;
+                    color: $font-color;
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;;
+                }
+                .nav-bar ul li a:hover {
+                    background: $font-color;
+                    color: $bk-color-menu;
+                    transition: all 0.5s;
+                }
+                  /*  .nav-bar ul li ul {
+                        position: absolute;
+                        left: 0;
+                        width: 200px;
+                        display: none;
+                    }
+                    .nav-bar ul li ul li {
+                        width: 100%;
+                        border-top: 1px solid rgba(0,0,0,.1);
+                    }
+                    .nav-bar ul li ul li ul {
+                        left: 200px;
+                        top: 0;
+                    }
+                        .nav-bar ul li:hover > ul {
+                            display: initial;
+                        } */
+                            #menu-bar {
+                                display: none;
+                            } 
+                                label {
+                                    font-size: 35px;
+                                    color: $font-color;
+                                    cursor: pointer;
+                                    display: none;
+                                }
+
+}
+
 /*MEDIAS @ */
 @media (max-width:768px) {
     h1 {
         font-size: 25px;
     }
     .bodas {
-        font-size: 30px;
-        letter-spacing: 20px;
-        font-weight: bold;
+        display: none;
     }
     .productos {
-        font-size: 20px;
-        letter-spacing: 20px;
-        font-weight: bold;
+       display: none;
     }
     .campanas {
-        font-size: 20px;
-        letter-spacing: 20px;
-        font-weight: bold;
+        display: none;
     }
     h2 {
         font-size: 20px;
+        padding-top: 140px;
     }
     .parrafo-cuatro {
         font-size: 20px;
@@ -46,14 +104,52 @@
     .bodas-container {
         display: grid;
         grid-template-columns: 50% 50%;
+        padding-top: 140px;
     }
     .seccion-productos{
         display: grid;
         grid-template-columns: 50% 50%;
+        padding-top: 140px;
+    }
+    .campana-uno {
+        display: grid;
+        padding-top: 140px;
     }
     .campana-dos {
         display: grid;
-        grid-template-columns: 50% 50%;
-        
+        grid-template-columns: 50% 50%;       
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 20px;
+    }
+    header label {
+        display: initial;
+    }
+    header .nav-bar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    header .nav-bar ul li {
+        width: 100%;
+    }
+    header .nav-bar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+    header .nav-bar ul li ul li {
+        background: #fff;
+    }
+    header .nav-bar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .nav-bar {
+        display: initial;
     }
 }
