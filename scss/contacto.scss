@@ -1,0 +1,30 @@
+.container{
+    padding-top: 170px;
+    padding-bottom: 270px;
+}
+.form-floating {
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 1.25rem;
+  }
+  
+  .form-floating label, .form-floating .form-control {
+    left: 0.5srem;
+    padding-left: 3.5rem;
+  }
+  
+  .icon-textarea {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.25rem;
+  }
+
+  @media (min-width: 576px) {
+.container, .container-sm {
+    max-width: 540px;
+}
+  }

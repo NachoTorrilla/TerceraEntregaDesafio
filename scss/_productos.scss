@@ -24,10 +24,10 @@
     width: 100%;
     margin: auto;
     @include grid-template-columns;
-    gap: 20px;
+    gap: 18px;
     padding: 20px;
 }
 .producto-imagen:hover {
     filter: opacity(0.9);
-    transform: scale(1.04);
+    transform: scale(1.01);
 }
